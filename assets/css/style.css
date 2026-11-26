@@ -234,14 +234,14 @@ papertitle {
 .language-switch button:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
 @font-face {
   font-family: "WenKai Web";
-  src: url("../fonts/wenkai/regular.woff2?v=9") format("woff2");
+  src: url("../fonts/wenkai/regular.woff2?v=10") format("woff2");
   font-style: normal;
   font-weight: 100 500;
   font-display: swap;
 }
 @font-face {
   font-family: "WenKai Web";
-  src: url("../fonts/wenkai/medium.woff2?v=9") format("woff2");
+  src: url("../fonts/wenkai/medium.woff2?v=10") format("woff2");
   font-style: normal;
   font-weight: 501 900;
   font-display: swap;
