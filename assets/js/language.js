@@ -3,6 +3,8 @@
   const buttons = switcher.querySelectorAll('[data-language]');
   const storageKey = 'academic-homepage-language';
   const translations = [];
+  const affiliation = document.querySelector('.profile-affiliation');
+  const [school, university] = affiliation.children;
 
   for (const attribute of ['textContent', 'content', 'aria-label', 'alt', 'title']) {
     const source = attribute === 'textContent' ? 'data-zh' : 'data-zh-' + attribute;
@@ -20,6 +22,7 @@
         entry.element.setAttribute(entry.attribute, entry[language]);
       }
     }
+    affiliation.prepend(language === 'zh-CN' ? university : school);
     document.documentElement.lang = language;
     for (const button of buttons) {
       button.setAttribute('aria-pressed', String(button.dataset.language === language));
