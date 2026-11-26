@@ -226,28 +226,28 @@ papertitle {
 .language-switch button:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
 @font-face {
   font-family: "WenKai Web";
-  src: url("../fonts/wenkai/regular.woff2") format("woff2");
+  src: url("../fonts/wenkai/regular.woff2?v=2") format("woff2");
   font-style: normal;
   font-weight: 100 500;
   font-display: swap;
 }
 @font-face {
   font-family: "WenKai Web";
-  src: url("../fonts/wenkai/medium.woff2") format("woff2");
+  src: url("../fonts/wenkai/medium.woff2?v=2") format("woff2");
   font-style: normal;
   font-weight: 501 900;
   font-display: swap;
 }
 html:lang(zh-CN) body {
   font-family: "WenKai Web", "Kaiti SC", KaiTi, STKaiti, serif;
-  line-height: 1.75;
+  line-height: 1.62;
 }
 html:lang(zh-CN) :is(h1, h2, h3) {
   font-weight: 600;
   line-height: 1.35;
 }
-html:lang(zh-CN) section > p { line-height: 1.85; }
-html:lang(zh-CN) .education-list p { line-height: 1.55; }
+html:lang(zh-CN) section > p { line-height: 1.68; }
+html:lang(zh-CN) .education-list p { line-height: 1.5; }
 html:lang(zh-CN) .periodical em { font-style: normal; }
 @media (max-width: 960px) {
   .language-switch { position: static; width: fit-content; margin-left: auto; }
