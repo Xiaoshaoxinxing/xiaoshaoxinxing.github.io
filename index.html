@@ -8,10 +8,12 @@
     <link rel="icon" media="(prefers-color-scheme:dark)" href="./assets/img/favicon-dark.png" type="image/png">
     <link rel="icon" media="(prefers-color-scheme:light)" href="./assets/img/favicon.png" type="image/png">
     <script src="./assets/js/favicon-switcher.js" defer></script>
+    <script src="./assets/js/venue-ranks-data.js" defer></script>
+    <script src="./assets/js/venue-ranks.js" defer></script>
     <script src="./assets/js/language.js?v=2" defer></script>
     <link rel="stylesheet" href="./assets/css/font.css">
     <link rel="stylesheet" href="./assets/css/style.css?v=10">
-    <link rel="stylesheet" href="./assets/css/publications.css?v=3">
+    <link rel="stylesheet" href="./assets/css/publications.css?v=4">
   </head>
   <body>
     <div class="wrapper">
@@ -59,6 +61,9 @@
         <h2 id="publications" class="publications-heading" data-zh="发表论文">Publications</h2>
         <div class="publications">
           <ol class="bibliography">
+            <!-- Each .periodical uses the English venue name or abbreviation in its <em> to look up ranks.
+                 For an ambiguous label, set data-venue to the full name on .periodical.
+                 For a shared journal/conference abbreviation, data-venue-type="journal" or "conference" can disambiguate. -->
             <li>
               <div class="pub-row" id="fema-ijcnn-2025">
                 <div class="col-sm-3 abbr fema-preview">
@@ -75,11 +80,6 @@
                   <div class="author"><strong>Sihan Shao</strong>, Xinshan Qin, Shuangjin Wu, Guanhua Lin, Yu Zhang, Lizhe Chen</div>
                   <div class="periodical">
                     <em data-zh="国际神经网络联合会议（IJCNN）">International Joint Conference on Neural Networks (IJCNN)</em><span data-zh="，2025 年，第 1–10 页。">, 2025, pp. 1–10.</span>
-                    <span class="venue-ranks">
-                      <a class="rank-ccf" href="https://www.ccf.org.cn/Academic_Evaluation/AI/">CCF-C</a>
-                      <a class="rank-core" href="https://portal.core.edu.au/conf-ranks/685/">CORE-B</a>
-                      <a class="rank-thcpl" href="https://numbda.cs.tsinghua.edu.cn/~yuwj/TH-CPL.pdf#page=12">TH-CPL-B</a>
-                    </span>
                   </div>
                   <div class="links">
                     <a class="btn text-only-link" href="./assets/files/fema-ijcnn-2025.pdf" data-zh="论文全文">Paper</a>

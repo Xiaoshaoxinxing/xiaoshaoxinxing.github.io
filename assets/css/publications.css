@@ -161,6 +161,8 @@ blockquote {
 .fema-preview a, .fema-preview img { display: block; }
 .venue-ranks {
   display: inline-flex;
+  max-width: 100%;
+  flex-wrap: wrap;
   gap: 0.3rem;
   vertical-align: middle;
 }
