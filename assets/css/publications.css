@@ -158,6 +158,30 @@ blockquote {
   margin: 0;
 }
 .fema-preview a, .fema-preview img { display: block; }
+
+@media (min-width: 961px) {
+  .publications ol.bibliography li .fema-preview { max-width: 288px; }
+}
+.paper-title:lang(en) {
+  font-family: "Crimson Pro", "Times New Roman", "Liberation Serif", serif;
+}
+@media (min-width: 481px) {
+  .publications { container-type: inline-size; }
+
+  /* With a narrower reading column, the title gets its own row above the figure and citation. */
+  @container (max-width: 47.5rem) {
+    .pub-row:lang(en):has(.paper-details) {
+      display: grid;
+      grid-template-columns: 40% minmax(0, 1fr);
+      grid-template-areas: "title title" "figure details";
+      gap: 0.3rem 20px;
+    }
+    .pub-row:lang(en):has(.paper-details) > .col-sm-9 { display: contents; }
+    .pub-row:lang(en) .paper-title { grid-area: title; }
+    .pub-row:lang(en) .fema-preview { grid-area: figure; }
+    .pub-row:lang(en) .paper-details { grid-area: details; }
+  }
+}
 .venue-ranks {
   display: inline-flex;
   max-width: 100%;
@@ -203,7 +227,7 @@ blockquote {
 .publications .paper-summary {
   margin: 0.5rem 0 0.4rem;
   font-size: 0.96rem;
-  line-height: 1.61;
+  line-height: 1.67;
 }
 .publications a.text-only-link { background-image: none !important; }
 .publications a.text-only-link::before,
