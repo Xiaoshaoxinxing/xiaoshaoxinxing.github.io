@@ -203,7 +203,7 @@ blockquote {
 .publications .paper-summary {
   margin: 0.5rem 0 0.4rem;
   font-size: 0.96rem;
-  line-height: 1.55;
+  line-height: 1.61;
 }
 .publications a.text-only-link { background-image: none !important; }
 .publications a.text-only-link::before,
