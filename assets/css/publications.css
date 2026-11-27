@@ -92,11 +92,10 @@ blockquote {
           border: 1px solid var(--global-theme-color); }
       .publications ol.bibliography li .col-sm-9 {
         position: relative;
+        flex: 1;
+        min-width: 0;
         padding-right: 15px;
         padding-left: 20px; }
-        @media print, screen and (min-width: 480px) {
-          .publications ol.bibliography li .col-sm-9 {
-            width: 100%; } }
       .publications ol.bibliography li .title {
         font-weight: bolder; }
       .publications ol.bibliography li .author a {
@@ -189,7 +188,7 @@ blockquote {
 .paper-title {
   position: relative;
   width: fit-content;
-  color: #39c;
+  color: var(--link-color);
 }
 .paper-title-link {
   position: absolute;
@@ -201,8 +200,10 @@ blockquote {
 .paper-title > :not(.paper-title-label, .paper-title-link) { display: none !important; }
 .paper-title:hover .paper-title-label { text-decoration: underline; }
 .paper-title:focus-within { outline: 2px solid currentColor; outline-offset: 2px; }
-@media (prefers-color-scheme: dark) {
-  .paper-title { color: #3eb7f0; }
+.publications .paper-summary {
+  margin: 0.5rem 0 0.4rem;
+  font-size: 0.96rem;
+  line-height: 1.55;
 }
 .publications a.text-only-link { background-image: none !important; }
 .publications a.text-only-link::before,
@@ -248,6 +249,9 @@ blockquote {
     --figure-shadow: rgb(0 4 11 / 38%);
     --figure-ambient: rgb(0 4 11 / 48%);
   }
+  .publications ol.bibliography li .abbr abbr {
+    background-color: #1b729e;
+  }
 }
 @media screen and (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
   .publications [data-tilt] > a,
@@ -261,6 +265,15 @@ blockquote {
   .publications [data-tilt][data-tracking]:not(:focus-within) > .badge {
     transform: translate(var(--badge-x), var(--badge-y));
     transition-duration: 65ms;
+  }
+}
+@media (max-width: 600px) {
+  .publications .links { margin-top: 0.3rem; }
+  .publications ol.bibliography li .links a.btn {
+    display: inline-flex;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 2rem;
   }
 }
 @media (max-width: 480px) {
