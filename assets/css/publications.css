@@ -152,7 +152,7 @@ blockquote {
 
 .publications ol.bibliography li .fema-preview {
   box-sizing: border-box;
-  flex: 0 0 34%;
+  flex: 0 0 40%;
   height: auto;
   padding: 0;
   margin: 0;
@@ -278,7 +278,7 @@ blockquote {
 }
 @media (max-width: 480px) {
   .publications ol.bibliography li .fema-preview {
-    max-width: 300px;
-    margin: 0 0 12px 20px;
+    max-width: 350px;
+    margin: 0 auto 12px;
   }
 }
